@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0875c9"><title>Jadwal Pelajaran X.9 MAN Demak</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f1f5fa;color:#20354c;font-family:Arial,Helvetica,sans-serif}
+.hero{height:285px;background:linear-gradient(135deg,#0754a6 0%,#078bdb 100%);color:white;text-align:center;position:relative;overflow:hidden;border-bottom:7px solid #f4d34e;padding:18px 12px 0}
+.decor{display:flex;justify-content:center;align-items:center;gap:26px;height:57px;font-size:39px;text-shadow:0 3px 3px #003c7955}.decor span:nth-child(2),.decor span:nth-child(4){animation:bob 2.8s ease-in-out infinite}.decor span:nth-child(3){animation:bob 3.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.brand{font-size:14px;font-weight:700;letter-spacing:2px;margin-top:5px;color:#d9efff}
+h1{font-size:clamp(30px,6vw,40px);margin:12px 0 5px;letter-spacing:-1px;text-shadow:0 2px 2px #003e7855}
+.subtitle{font-size:16px;color:#e1f1ff}.class-badge{display:inline-block;margin-top:17px;background:#078b4d;border:3px solid #b8f5ce;border-radius:17px;padding:11px 27px;font-size:26px;font-weight:800;box-shadow:0 5px 0 #075b37}
+.hill{position:absolute;bottom:0;width:150px;height:64px;background:linear-gradient(#23b76d 0 48%,#087a4c 48%);border-radius:100px 100px 0 0}.hill.left{left:-22px}.hill.right{right:-22px}
+.wrap{max-width:760px;margin:24px auto;padding:0 16px 38px}
+.countdown{background:linear-gradient(120deg,#14528f,#0789c9);color:white;border-radius:19px;padding:17px 17px 18px;box-shadow:0 8px 18px #13568b30;min-height:194px;position:relative}
+.count-top{font-size:13px;font-weight:700;letter-spacing:.2px;opacity:.95}.time-chip{position:absolute;right:16px;top:15px;background:#ffffff35;padding:7px 12px;border-radius:20px;font-size:13px;font-variant-numeric:tabular-nums}
+.count-title{font-size:21px;font-weight:800;margin:15px 0 3px}.count-sub{font-size:14px}.party{font-size:31px;margin:8px 0 0}.count-note{font-size:12px;color:#d6ebff;margin-top:2px}
+.choose{font-size:18px;font-weight:700;margin:20px 0 13px}
+.days{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}
+.day{background:#fff;border:1px solid #dce5ef;border-radius:15px;min-height:67px;padding:8px 3px;color:#25415d;font-weight:700;font-size:14px;box-shadow:0 3px 7px #18334a12;cursor:pointer}
+.day.active{background:#07884f;border-color:#07884f;color:white;box-shadow:0 5px 12px #07884f35}.todaymark{display:block;font-size:10px;font-weight:500;margin-top:3px}
+.schedule-card{background:#fff;border:1px solid #e2e9f1;border-radius:22px;padding:19px;margin-top:20px;box-shadow:0 7px 22px #18334a0d}
+.card-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 14px}.card-head h2{margin:0;font-size:24px;color:#254c70}.count-badge{background:#e9f2ff;color:#32669b;border-radius:18px;padding:7px 11px;font-size:12px;font-weight:700;white-space:nowrap}
+.lesson{display:grid;grid-template-columns:115px 1fr 30px;gap:13px;align-items:center;border:1px solid #e4e9ef;border-radius:16px;padding:13px 14px;margin:10px 0;min-height:91px;background:#fff}
+.lesson.current{border:2px solid #19a765;background:#f5fff9}.period{background:#edf6ff;border-radius:13px;text-align:center;padding:11px 5px;color:#315e86}.period b{display:block;font-size:14px}.period small{display:block;font-size:12px;color:#77899a;margin-top:3px}
+.subject{font-size:18px;font-weight:800;color:#20384f}.teacher{font-size:14px;color:#788593;margin-top:6px}.subject-icon{font-size:26px;text-align:center}
+.break{border:1px dashed #e5bd50;background:#fff5d9;border-radius:14px;padding:12px 15px;margin:10px 0;display:flex;align-items:center;gap:12px;color:#795d1b}.break .cup{font-size:25px}.break b{display:block;font-size:14px}.break small{font-size:12px}
+footer{text-align:center;color:#9a9eaa;font-size:13px;margin:60px 0 5px}.footer-stars{font-size:17px;color:#e4bd37}
+@media(max-width:520px){.hero{height:285px}.decor{gap:22px;font-size:37px}.days{gap:8px}.day{font-size:13px;min-height:67px}.schedule-card{padding:17px 15px}.lesson{grid-template-columns:115px 1fr 26px;gap:10px;padding:12px 10px;min-height:90px}.subject{font-size:17px}.teacher{font-size:13px}.period b{font-size:13px}.period small{font-size:11px}}
+@media(max-width:370px){.days{gap:5px}.day{font-size:12px}.lesson{grid-template-columns:98px 1fr 22px;gap:8px}.subject{font-size:15px}.teacher{font-size:11px}.period{padding:9px 3px}.period b{font-size:12px}.subject-icon{font-size:22px}}
+</style></head><body>
+<header class="hero">
+ <div class="decor"><span>⭐</span><span>🪙</span><span>🍄</span><span>❔</span><span>🧱</span></div>
+ <div class="brand">MY SCHOOL SCHEDULE</div><h1>Jadwal Pelajaran</h1>
+ <div class="subtitle">MAN DEMAK • Tahun Ajaran 2026/2027</div>
+ <div class="class-badge">X.9</div><div class="hill left"></div><div class="hill right"></div>
+</header>
+<main class="wrap">
+ <section class="countdown">
+  <div class="count-top">⏱ COUNTDOWN PELAJARAN</div><div class="time-chip" id="clock">00.00.00</div>
+  <div class="count-title" id="countTitle">Memuat jadwal...</div><div class="count-sub" id="countSub"></div>
+  <div class="party" id="party">🎉</div><div class="count-note" id="countNote"></div>
+ </section>
+ <div class="choose">Pilih hari</div><nav class="days" id="days"></nav>
+ <section class="schedule-card"><div class="card-head"><h2 id="dayTitle">Senin</h2><span class="count-badge" id="subjectCount">0 mata pelajaran</span></div><div id="scheduleList"></div></section>
+ <footer><span class="footer-stars">⭐ 🪙 🍄</span> Belajar Hari Ini, Untuk Masa Depan Nanti <span class="footer-stars">⭐ 🪙</span></footer>
+</main>
+<script>
+const schedule={"Senin": [["PJOK", "07.00", "08.50", "Luqman Hakim, S.Pd", "🏃"], ["Matematika", "08.50", "09.30", "Ulfa Noviyanti, S.Pd", "📐"], ["Matematika", "09.45", "10.25", "Ulfa Noviyanti, S.Pd", "📐"], ["KKA", "10.25", "11.05", "Anang Aulia Rizki, S.Pd", "💻"], ["Bahasa Jawa", "11.05", "11.45", "Dewi Setyowati, S.Pd", "🎭"], ["Bahasa Jawa", "12.30", "13.10", "Dewi Setyowati, S.Pd", "🎭"], ["Pendidikan Pancasila", "13.10", "14.30", "Fery Haryanti, S.Pd", "🇮🇩"]], "Selasa": [["IPS Sejarah", "07.00", "08.50", "Nadl ifatun Nuroniyyah, S.Pd", "🏛️"], ["Bahasa Indonesia", "08.50", "09.30", "Himmatul Aliyah, S.Pd", "📚"], ["Bahasa Indonesia", "09.45", "10.25", "Himmatul Aliyah, S.Pd", "📚"], ["IPS Sosiologi", "10.25", "11.05", "Ahmad Lujito, S.Pd", "👥"], ["IPS Sosiologi", "11.05", "11.45", "Ahmad Lujito, S.Pd", "👥"], ["SKI", "12.30", "13.10", "Izzatul Mufafiroh, S.Pd", "🕌"], ["Bahasa Arab", "13.10", "14.30", "Fiyna Maziyyah, S.Hum", "🔤"]], "Rabu": [["IPA Fisika", "07.00", "08.50", "Hj. Rezki Widari, S.Pd., M.Pd.", "⚛️"], ["Akidah Akhlak", "08.50", "09.30", "Ahmad Romadhon, S.Pd.I.", "🌙"], ["Akidah Akhlak", "09.45", "10.25", "Ahmad Romadhon, S.Pd.I.", "🌙"], ["Al-Qur'an Hadis", "10.25", "11.45", "Umi Sa'adillah, S.Pd.", "📖"], ["IPS Ekonomi", "12.30", "13.50", "Lestari Puji Rahayu, S.Pd.", "📈"], ["KKA", "13.50", "14.30", "Anang Aulia Rizki, S.Pd.", "💻"]], "Kamis": [["Bahasa Indonesia", "07.00", "08.50", "Himmatul Aliyah, S.Pd", "📚"], ["Bahasa Arab", "08.50", "09.30", "Fiyna Maziyyah, S.Hum", "🔤"], ["Bahasa Arab", "09.45", "10.25", "Fiyna Maziyyah, S.Hum", "🔤"], ["IPS Geografi", "10.25", "11.45", "Adkar Nawawi, S.Pd", "🌍"], ["Bahasa Inggris", "12.30", "13.50", "Dwi Lestari, S.Pd", "🔠"], ["BK", "13.50", "14.30", "Dwi Wahyusari, S.Pd", "🧭"]], "Jumat": [["IPA Biologi", "07.00", "08.50", "Siti Zulaikhah, S.Pd", "🧬"], ["Fikih", "08.50", "09.30", "Risalatul Umami, S.Pd", "📘"], ["Fikih", "09.45", "10.25", "Risalatul Umami, S.Pd", "📘"], ["Nahwu-Shorof", "10.25", "11.05", "Fiyna Maziyyah, S.Hum", "📝"]], "Sabtu": [["PKWU", "07.00", "08.50", "Tiani Puji Nastiti, S.Pd", "🛠️"], ["Seni Budaya", "08.50", "09.30", "Ayu Soraya, S.Pd", "🎨"], ["Seni Budaya", "09.45", "10.25", "Ayu Soraya, S.Pd", "🎨"], ["Nahwu-Shorof", "10.25", "11.45", "Fiyna Maziyyah, S.Hum", "📝"], ["Matematika", "12.30", "13.10", "Ulfa Noviyanti, S.Pd", "📐"], ["Bahasa Inggris", "13.10", "13.50", "Dwi Lestari, S.Pd", "🔠"], ["IPA Kimia", "13.50", "15.10", "Mudrikatul Choiriyah, S.Pd., M.Pd.", "🧪"]]};
+const dayNames=["Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
+const breakTimes=[{start:"09.30",end:"09.45",label:"ISTIRAHAT PERTAMA"},{start:"11.45",end:"12.30",label:"ISTIRAHAT KEDUA"}];
+let selected=dayNames[(new Date().getDay()+6)%7]||"Senin";
+const min=s=>{let [h,m]=s.split(".").map(Number);return h*60+m};
+const now=()=>new Date().getHours()*60+new Date().getMinutes();
+const today=()=>dayNames[(new Date().getDay()+6)%7]||"";
+function items(day){let arr=(schedule[day]||[]).map((x,i)=>({subject:x[0],start:x[1],end:x[2],teacher:x[3],icon:x[4],type:"lesson",index:i}));
+ breakTimes.forEach((b,i)=>{if(i===0||day!=="Jumat")arr.push({...b,type:"break"})});
+ return arr.sort((a,b)=>min(a.start)-min(b.start));
+}
+function render(){
+ document.getElementById("days").innerHTML=dayNames.map(d=>`<button class="day ${selected===d?"active":""}" data-day="${d}">${d}${d===today()?'<span class="todaymark">• HARI INI</span>':""}</button>`).join("");
+ document.querySelectorAll(".day").forEach(b=>b.onclick=()=>{selected=b.dataset.day;render()});
+ document.getElementById("dayTitle").textContent=selected;
+ let lessons=(schedule[selected]||[]);
+ document.getElementById("subjectCount").textContent=lessons.length+" mata pelajaran";
+ const n=selected===today()?now():-1;
+ document.getElementById("scheduleList").innerHTML=items(selected).map(x=>{
+  if(x.type==="break")return `<div class="break"><span class="cup">☕</span><div><b>${x.label}</b><small>${x.start}–${x.end} • Waktunya istirahat</small></div></div>`;
+  const cur=n>=min(x.start)&&n<min(x.end);
+  const periodStart=x.start,periodEnd=x.end;
+  return `<article class="lesson ${cur?"current":""}"><div class="period"><b>Jam ${x.index+1}</b><small>${periodStart}–${periodEnd}</small></div><div><div class="subject">${x.subject}</div><div class="teacher">${x.teacher}</div></div><div class="subject-icon">${x.icon}</div></article>`;
+ }).join("");
+ updateCountdown();
+}
+function updateCountdown(){
+ const title=document.getElementById("countTitle"),sub=document.getElementById("countSub"),party=document.getElementById("party"),note=document.getElementById("countNote");
+ if(selected!==today()){title.textContent="Jadwal "+selected;sub.textContent="Lihat daftar mata pelajaran pilihanmu.";party.textContent="📚";note.textContent="Pilih hari ini untuk melihat countdown.";return}
+ const n=now(),arr=items(selected),cur=arr.find(x=>n>=min(x.start)&&n<min(x.end)),next=arr.find(x=>min(x.start)>n);
+ if(cur){let left=min(cur.end)-n;if(cur.type==="break"){title.textContent=cur.label;sub.textContent="Waktunya istirahat!";party.textContent="☕";note.textContent="Istirahat selesai dalam "+left+" menit."}else{title.textContent=cur.subject+" sedang berlangsung";sub.textContent="Semangat belajar!";party.textContent="📚";note.textContent="Pelajaran selesai dalam "+left+" menit."}}
+ else if(next){let left=min(next.start)-n;title.textContent=next.type==="break"?"Sebentar lagi istirahat":"Pelajaran berikutnya: "+next.subject;sub.textContent="Sampai mulai dalam "+left+" menit.";party.textContent=next.type==="break"?"☕":"⏳";note.textContent="Jadwal berikutnya dimulai pukul "+next.start+"."}
+ else{title.textContent="Pelajaran hari ini selesai";sub.textContent="Sampai jumpa di sekolah besok!";party.textContent="🎉";note.textContent="Semua jadwal hari ini sudah selesai."}
+}
+function tick(){let d=new Date(),p=n=>String(n).padStart(2,"0");document.getElementById("clock").textContent=`${p(d.getHours())}.${p(d.getMinutes())}.${p(d.getSeconds())}`;if(selected===today())updateCountdown();}
+render();tick();setInterval(tick,1000);
+</script></body></html>
